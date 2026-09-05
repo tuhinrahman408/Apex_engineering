@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Price Estimator | APEX Engineering</title>
+    <meta name="description" content="Estimate your interior design or civil engineering project cost instantly with APEX Engineering's price calculator.">
+    <meta property="og:title" content="Price Estimator | APEX Engineering">
+    <meta property="og:description" content="Estimate your interior design or civil engineering project cost instantly with APEX Engineering's price calculator.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-building"></i>
+            <span>APEX <small>ENGINEERING</small></span>
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">Engineer Profile</a>
+            <a href="portfolio.html">Our Work</a>
+            <a href="calculator.html" class="active">Price Estimator</a>
+            <a href="order.html">Place Order</a>
+        </div>
+
+        <a href="https://wa.me/8801876910424" class="whatsapp-btn">
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+        </a>
+
+        <button class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+
+        <span>PROJECT ESTIMATOR</span>
+
+        <h1>Calculate Your Estimated Project Cost</h1>
+
+        <p>
+            Select a service and enter your project area to get
+            an estimated cost.
+        </p>
+
+    </section>
+
+
+    <section class="calculator-section">
+
+        <div class="calculator-box">
+
+            <div class="calculator-header">
+
+                <i class="fa-solid fa-calculator"></i>
+
+                <div>
+                    <h2>Project Cost Calculator</h2>
+                    <p>Get a quick estimated price</p>
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="serviceType">
+                    Select Service
+                </label>
+
+                <select id="serviceType">
+
+                    <option value="0">
+                        -- Select a Service --
+                    </option>
+
+                    <option value="15">
+                        Architectural Design
+                    </option>
+
+                    <option value="25">
+                        Structural Design
+                    </option>
+
+                    <option value="35">
+                        Interior Design
+                    </option>
+
+                    <option value="45">
+                        Complete Engineering Package
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="area">
+                    Project Area (sq. ft.)
+                </label>
+
+                <input
+                    type="number"
+                    id="area"
+                    placeholder="Example: 1500"
+                    min="1">
+
+            </div>
+
+
+            <button
+                type="button"
+                class="btn primary-btn calculate-btn"
+                id="calculateBtn">
+
+                Calculate Estimated Cost
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+
+            <div class="calculator-result" id="calculatorResult">
+
+                <span>Estimated Project Cost</span>
+
+                <h2 id="totalCost">৳ 0</h2>
+
+                <p>
+                    This is an approximate estimate.
+                    Final pricing may vary depending on project requirements.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="calculator-info">
+
+            <span class="section-label">
+                HOW IT WORKS
+            </span>
+
+            <h2>
+                Simple & Fast
+                <span>Estimation</span>
+            </h2>
+
+            <p>
+                Use our calculator to get a quick idea about your
+                project cost before contacting us.
+            </p>
+
+
+            <div class="step">
+
+                <div class="step-number">01</div>
+
+                <div>
+                    <h3>Select Service</h3>
+                    <p>
+                        Choose the service you need for your project.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">02</div>
+
+                <div>
+                    <h3>Enter Area</h3>
+                    <p>
+                        Enter the approximate project area in square feet.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">03</div>
+
+                <div>
+                    <h3>Get Estimate</h3>
+                    <p>
+                        Instantly see the approximate project cost.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="cta-section">
+
+        <div>
+
+            <span>NEED A CUSTOM QUOTE?</span>
+
+            <h2>
+                Let's Discuss Your
+                <strong>Project</strong>
+            </h2>
+
+            <p>
+                For a detailed quotation, submit your project requirements.
+            </p>
+
+        </div>
+
+        <a href="order.html" class="btn primary-btn">
+            Request a Quote
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-building"></i>
+                <span>APEX <small>ENGINEERING</small></span>
+            </a>
+
+            <p>
+                Professional civil engineering, architectural and
+                interior design solutions.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">Engineer Profile</a>
+            <a href="portfolio.html">Our Work</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Services</h3>
+
+            <a href="services.html">Civil Engineering</a>
+            <a href="services.html">Structural Design</a>
+            <a href="services.html">Interior Design</a>
+            <a href="calculator.html">Cost Estimation</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Contact</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Dohar, Dhaka, Bangladesh
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +880 1340439224
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                tuhinrahmanasif408@gmail.com
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+        <p>© 2026 APEX Engineering. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

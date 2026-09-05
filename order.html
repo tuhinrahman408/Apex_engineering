@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Place Order | APEX Engineering</title>
+    <meta name="description" content="Request a project quote from APEX Engineering. Fill out our order form and get a response on WhatsApp.">
+    <meta property="og:title" content="Place Order | APEX Engineering">
+    <meta property="og:description" content="Request a project quote from APEX Engineering. Fill out our order form and get a response on WhatsApp.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-building"></i>
+            <span>APEX <small>ENGINEERING</small></span>
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">Engineer Profile</a>
+            <a href="portfolio.html">Our Work</a>
+            <a href="calculator.html">Price Estimator</a>
+            <a href="order.html" class="active">Place Order</a>
+        </div>
+
+        <a href="https://wa.me/8801876910424" class="whatsapp-btn">
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+        </a>
+
+        <button class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+
+        <span>START YOUR PROJECT</span>
+
+        <h1>Place Your Project Request</h1>
+
+        <p>
+            Tell us about your project and our team will contact you.
+        </p>
+
+    </section>
+
+
+    <section class="order-section">
+
+        <div class="order-info">
+
+            <span class="section-label">
+                PROJECT REQUEST
+            </span>
+
+            <h2>
+                Let's Build Something
+                <span>Great Together</span>
+            </h2>
+
+            <p>
+                Fill out the form with your basic project information.
+                Your request can be sent directly to our WhatsApp.
+            </p>
+
+
+            <div class="contact-info">
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+880 1340439224</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div>
+                        <h3>Email</h3>
+                        <p>tuhinrahmanasif408@gmail.com</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div>
+                        <h3>Office</h3>
+                        <p>Dohar, Dhaka, Bangladesh</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="order-form-box">
+
+            <form id="orderForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="fullName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="01XXXXXXXXX"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="service">
+
+                        Service
+
+                    </label>
+
+                    <select id="service" name="service" required>
+
+                        <option value="">
+                            Select a service
+                        </option>
+
+                        <option value="Civil Engineering">
+                            Civil Engineering
+                        </option>
+
+                        <option value="Structural Design">
+                            Structural Design
+                        </option>
+
+                        <option value="Architectural Design">
+                            Architectural Design
+                        </option>
+
+                        <option value="Interior Design">
+                            Interior Design
+                        </option>
+
+                        <option value="Cost Estimation">
+                            Cost Estimation
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="projectArea">
+                            Project Area
+                        </label>
+
+                        <input
+                            type="number"
+                            id="projectArea"
+                            name="projectArea"
+                            placeholder="Example: 1500 sq.ft.">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="projectLocation">
+                            Project Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="projectLocation"
+                            name="projectLocation"
+                            placeholder="Project location">
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="projectDetails">
+                        Project Details & Requirements
+                    </label>
+
+                    <textarea
+                        id="projectDetails"
+                        name="projectDetails"
+                        rows="7"
+                        placeholder="Tell us about your project, requirements, budget, design preferences, etc."
+                        required></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn primary-btn submit-order-btn">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Send Project Request
+
+                </button>
+
+
+                <p class="form-note">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    Your information will be prepared as a WhatsApp
+                    message for project discussion.
+
+                </p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-building"></i>
+                <span>APEX <small>ENGINEERING</small></span>
+            </a>
+
+            <p>
+                Professional civil engineering, architectural and
+                interior design solutions.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">Engineer Profile</a>
+            <a href="portfolio.html">Our Work</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Services</h3>
+
+            <a href="services.html">Civil Engineering</a>
+            <a href="services.html">Structural Design</a>
+            <a href="services.html">Interior Design</a>
+            <a href="calculator.html">Cost Estimation</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Contact</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Dohar, Dhaka, Bangladesh
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +880 1340439224
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                tuhinrahmanasif408@gmail.com
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+        <p>© 2026 APEX Engineering. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

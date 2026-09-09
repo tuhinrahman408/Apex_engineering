@@ -1,52 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Our Work | APEX Engineering</title>
-    <meta name="description" content="Browse APEX Engineering's completed residential and commercial interior design and engineering projects.">
-    <meta property="og:title" content="Our Work | APEX Engineering">
-    <meta property="og:description" content="Browse APEX Engineering's completed residential and commercial interior design and engineering projects.">
-    <meta property="og:type" content="website">
+
+    <meta name="description"
+          content="Explore APEX Engineering residential, commercial and interior design projects.">
 
     <link rel="stylesheet" href="../css/css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
 
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 
+
 <body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
 
 <header class="header">
 
     <nav class="navbar">
 
         <a href="index.html" class="logo">
+
             <i class="fa-solid fa-building"></i>
-            <span>APEX <small>ENGINEERING</small></span>
+
+            <span>
+                APEX
+                <small>ENGINEERING</small>
+            </span>
+
         </a>
+
 
         <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="about.html">Engineer Profile</a>
-            <a href="portfolio.html" class="active">Our Work</a>
-            <a href="calculator.html">Price Estimator</a>
-            <a href="order.html">Place Order</a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a href="about.html">
+                Engineer Profile
+            </a>
+
+            <a href="portfolio.html" class="active">
+                Our Work
+            </a>
+
+            <a href="calculator.html">
+                Price Estimator
+            </a>
+
+            <a href="order.html">
+                Place Order
+            </a>
+
         </div>
 
-        <a href="https://wa.me/8801876910424" class="whatsapp-btn">
+
+        <a href="https://wa.me/8801876910424"
+           class="whatsapp-btn">
+
             <i class="fa-brands fa-whatsapp"></i>
+
             WhatsApp
+
         </a>
 
+
         <button class="menu-btn">
+
             <i class="fa-solid fa-bars"></i>
+
         </button>
 
     </nav>
@@ -54,244 +97,440 @@
 </header>
 
 
+
+<!-- =========================================
+     MAIN
+========================================= -->
+
 <main>
+
+
+    <!-- PAGE HERO -->
 
     <section class="page-hero">
 
         <span>OUR PORTFOLIO</span>
 
-        <h1>Projects We've Worked On</h1>
+        <h1>
+            Projects We've Worked On
+        </h1>
 
         <p>
-            Explore our residential, commercial and interior
-            design projects.
+            Explore our residential, commercial and
+            interior design projects.
         </p>
 
     </section>
 
 
-    <!-- FILTER -->
+
+    <!-- =========================================
+         PROJECT FILTER
+    ========================================= -->
+
     <section class="portfolio-section">
+
 
         <div class="portfolio-filters">
 
-            <button class="filter-btn active" data-filter="all">
+            <button class="filter-btn active"
+                    data-filter="all">
+
                 All Projects
+
             </button>
 
-            <button class="filter-btn" data-filter="residential">
+
+            <button class="filter-btn"
+                    data-filter="residential">
+
                 Residential
+
             </button>
 
-            <button class="filter-btn" data-filter="commercial">
+
+            <button class="filter-btn"
+                    data-filter="commercial">
+
                 Commercial
+
             </button>
 
-            <button class="filter-btn" data-filter="interior">
+
+            <button class="filter-btn"
+                    data-filter="interior">
+
                 Interior
+
             </button>
 
         </div>
 
 
+
+        <!-- =====================================
+             PROJECT GRID
+        ====================================== -->
+
         <div class="portfolio-grid">
 
+
             <!-- PROJECT 1 -->
-            <article class="project-card" data-category="residential">
+
+            <a href="project-details.html?id=grand-duplex"
+               class="project-card project-link"
+               data-category="residential">
 
                 <div class="project-image">
+
                     <img
-                        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80"
-                        loading="lazy"
-                        alt="Modern Duplex Residence">
-                </div>
+                        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85"
+                        alt="Grand Duplex Residence"
+                        loading="lazy">
 
-                <div class="project-content">
+                    <div class="project-hover">
 
-                    <span>RESIDENTIAL</span>
+                        <span>
+                            View Project
+                        </span>
 
-                    <h3>Grand Duplex Residence</h3>
+                        <i class="fa-solid fa-arrow-right"></i>
 
-                    <p>
-                        Modern residential building with efficient
-                        space planning and contemporary architecture.
-                    </p>
-
-                    <div class="project-location">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Dhanmondi, Dhaka
                     </div>
 
                 </div>
 
-            </article>
+
+                <div class="project-content">
+
+                    <span>
+                        RESIDENTIAL
+                    </span>
+
+                    <h3>
+                        Grand Duplex Residence
+                    </h3>
+
+                    <p>
+                        Modern residential building with
+                        efficient space planning and
+                        contemporary architecture.
+                    </p>
+
+
+                    <div class="project-location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Dhanmondi, Dhaka
+
+                    </div>
+
+                </div>
+
+            </a>
+
 
 
             <!-- PROJECT 2 -->
-            <article class="project-card" data-category="interior">
+
+            <a href="project-details.html?id=minimalist-penthouse"
+               class="project-card project-link"
+               data-category="interior">
 
                 <div class="project-image">
+
                     <img
-                        src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=80"
-                        loading="lazy"
-                        alt="Modern Interior Design">
-                </div>
+                        src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85"
+                        alt="Modern Minimalist Penthouse"
+                        loading="lazy">
 
-                <div class="project-content">
+                    <div class="project-hover">
 
-                    <span>INTERIOR</span>
+                        <span>
+                            View Project
+                        </span>
 
-                    <h3>Modern Minimalist Penthouse</h3>
+                        <i class="fa-solid fa-arrow-right"></i>
 
-                    <p>
-                        Elegant interior design combining minimalism,
-                        functionality and modern aesthetics.
-                    </p>
-
-                    <div class="project-location">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Uttara, Dhaka
                     </div>
 
                 </div>
 
-            </article>
+
+                <div class="project-content">
+
+                    <span>
+                        INTERIOR
+                    </span>
+
+                    <h3>
+                        Modern Minimalist Penthouse
+                    </h3>
+
+                    <p>
+                        Elegant interior design combining
+                        minimalism, functionality and
+                        modern aesthetics.
+                    </p>
+
+
+                    <div class="project-location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Uttara, Dhaka
+
+                    </div>
+
+                </div>
+
+            </a>
+
 
 
             <!-- PROJECT 3 -->
-            <article class="project-card" data-category="commercial">
+
+            <a href="project-details.html?id=commercial-plaza"
+               class="project-card project-link"
+               data-category="commercial">
 
                 <div class="project-image">
+
                     <img
-                        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80"
-                        loading="lazy"
-                        alt="Commercial Plaza">
-                </div>
+                        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=85"
+                        alt="Commercial Plaza Complex"
+                        loading="lazy">
 
-                <div class="project-content">
+                    <div class="project-hover">
 
-                    <span>COMMERCIAL</span>
+                        <span>
+                            View Project
+                        </span>
 
-                    <h3>Commercial Plaza Complex</h3>
+                        <i class="fa-solid fa-arrow-right"></i>
 
-                    <p>
-                        Multi-purpose commercial development designed
-                        for efficient business operations.
-                    </p>
-
-                    <div class="project-location">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Gulshan, Dhaka
                     </div>
 
                 </div>
 
-            </article>
+
+                <div class="project-content">
+
+                    <span>
+                        COMMERCIAL
+                    </span>
+
+                    <h3>
+                        Commercial Plaza Complex
+                    </h3>
+
+                    <p>
+                        Multi-purpose commercial development
+                        designed for efficient business
+                        operations.
+                    </p>
+
+
+                    <div class="project-location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Gulshan, Dhaka
+
+                    </div>
+
+                </div>
+
+            </a>
+
 
 
             <!-- PROJECT 4 -->
-            <article class="project-card" data-category="residential">
+
+            <a href="project-details.html?id=modern-family-house"
+               class="project-card project-link"
+               data-category="residential">
 
                 <div class="project-image">
+
                     <img
-                        src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80"
-                        loading="lazy"
-                        alt="Modern Family House">
-                </div>
+                        src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85"
+                        alt="Modern Family House"
+                        loading="lazy">
 
-                <div class="project-content">
+                    <div class="project-hover">
 
-                    <span>RESIDENTIAL</span>
+                        <span>
+                            View Project
+                        </span>
 
-                    <h3>Modern Family House</h3>
+                        <i class="fa-solid fa-arrow-right"></i>
 
-                    <p>
-                        Comfortable family residence designed with
-                        modern architecture and natural lighting.
-                    </p>
-
-                    <div class="project-location">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Bashundhara, Dhaka
                     </div>
 
                 </div>
 
-            </article>
+
+                <div class="project-content">
+
+                    <span>
+                        RESIDENTIAL
+                    </span>
+
+                    <h3>
+                        Modern Family House
+                    </h3>
+
+                    <p>
+                        Comfortable family residence designed
+                        with modern architecture and natural
+                        lighting.
+                    </p>
+
+
+                    <div class="project-location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Bashundhara, Dhaka
+
+                    </div>
+
+                </div>
+
+            </a>
+
 
 
             <!-- PROJECT 5 -->
-            <article class="project-card" data-category="interior">
+
+            <a href="project-details.html?id=luxury-living"
+               class="project-card project-link"
+               data-category="interior">
 
                 <div class="project-image">
+
                     <img
-                        src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80"
-                        loading="lazy"
-                        alt="Luxury Interior">
-                </div>
+                        src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=85"
+                        alt="Luxury Living Interior"
+                        loading="lazy">
 
-                <div class="project-content">
+                    <div class="project-hover">
 
-                    <span>INTERIOR</span>
+                        <span>
+                            View Project
+                        </span>
 
-                    <h3>Luxury Living Interior</h3>
+                        <i class="fa-solid fa-arrow-right"></i>
 
-                    <p>
-                        Premium living space featuring modern furniture,
-                        lighting and elegant finishing.
-                    </p>
-
-                    <div class="project-location">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Banani, Dhaka
                     </div>
 
                 </div>
 
-            </article>
+
+                <div class="project-content">
+
+                    <span>
+                        INTERIOR
+                    </span>
+
+                    <h3>
+                        Luxury Living Interior
+                    </h3>
+
+                    <p>
+                        Premium living space featuring modern
+                        furniture, lighting and elegant finishing.
+                    </p>
+
+
+                    <div class="project-location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Banani, Dhaka
+
+                    </div>
+
+                </div>
+
+            </a>
+
 
 
             <!-- PROJECT 6 -->
-            <article class="project-card" data-category="commercial">
+
+            <a href="project-details.html?id=corporate-office"
+               class="project-card project-link"
+               data-category="commercial">
 
                 <div class="project-image">
+
                     <img
-                        src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=80"
-                        loading="lazy"
-                        alt="Modern Office">
-                </div>
+                        src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85"
+                        alt="Corporate Office Interior"
+                        loading="lazy">
 
-                <div class="project-content">
+                    <div class="project-hover">
 
-                    <span>COMMERCIAL</span>
+                        <span>
+                            View Project
+                        </span>
 
-                    <h3>Corporate Office Interior</h3>
+                        <i class="fa-solid fa-arrow-right"></i>
 
-                    <p>
-                        Professional office environment designed for
-                        productivity and modern business needs.
-                    </p>
-
-                    <div class="project-location">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Motijheel, Dhaka
                     </div>
 
                 </div>
 
-            </article>
+
+                <div class="project-content">
+
+                    <span>
+                        COMMERCIAL
+                    </span>
+
+                    <h3>
+                        Corporate Office Interior
+                    </h3>
+
+                    <p>
+                        Professional office environment designed
+                        for productivity and modern business needs.
+                    </p>
+
+
+                    <div class="project-location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Motijheel, Dhaka
+
+                    </div>
+
+                </div>
+
+            </a>
+
 
         </div>
 
     </section>
 
 
-    <!-- CTA -->
+
+    <!-- =========================================
+         CTA
+    ========================================== -->
+
     <section class="cta-section">
 
         <div>
 
-            <span>YOUR PROJECT COULD BE NEXT</span>
+            <span>
+                YOUR PROJECT COULD BE NEXT
+            </span>
 
             <h2>
                 Start Your Project
@@ -304,62 +543,113 @@
 
         </div>
 
-        <a href="order.html" class="btn primary-btn">
+
+        <a href="order.html"
+           class="btn primary-btn">
+
             Start a Project
+
             <i class="fa-solid fa-arrow-right"></i>
+
         </a>
 
     </section>
 
+
 </main>
 
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
 
 <footer class="footer">
 
     <div class="footer-container">
 
+
         <div class="footer-about">
 
-            <a href="index.html" class="logo">
+            <a href="index.html"
+               class="logo">
+
                 <i class="fa-solid fa-building"></i>
-                <span>APEX <small>ENGINEERING</small></span>
+
+                <span>
+                    APEX
+                    <small>ENGINEERING</small>
+                </span>
+
             </a>
 
+
             <p>
-                Professional civil engineering, architectural and
-                interior design solutions.
+                Professional civil engineering,
+                architectural and interior design solutions.
             </p>
 
         </div>
 
 
+
         <div class="footer-column">
 
-            <h3>Quick Links</h3>
+            <h3>
+                Quick Links
+            </h3>
 
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="about.html">Engineer Profile</a>
-            <a href="portfolio.html">Our Work</a>
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a href="about.html">
+                Engineer Profile
+            </a>
+
+            <a href="portfolio.html">
+                Our Work
+            </a>
 
         </div>
 
 
+
         <div class="footer-column">
 
-            <h3>Services</h3>
+            <h3>
+                Services
+            </h3>
 
-            <a href="services.html">Civil Engineering</a>
-            <a href="services.html">Structural Design</a>
-            <a href="services.html">Interior Design</a>
-            <a href="calculator.html">Cost Estimation</a>
+            <a href="services.html">
+                Civil Engineering
+            </a>
+
+            <a href="services.html">
+                Structural Design
+            </a>
+
+            <a href="services.html">
+                Interior Design
+            </a>
+
+            <a href="calculator.html">
+                Cost Estimation
+            </a>
 
         </div>
 
 
+
         <div class="footer-column">
 
-            <h3>Contact</h3>
+            <h3>
+                Contact
+            </h3>
 
             <p>
                 <i class="fa-solid fa-location-dot"></i>
@@ -378,11 +668,16 @@
 
         </div>
 
+
     </div>
 
 
     <div class="footer-bottom">
-        <p>© 2026 APEX Engineering. All Rights Reserved.</p>
+
+        <p>
+            © 2026 APEX Engineering. All Rights Reserved.
+        </p>
+
     </div>
 
 </footer>
@@ -391,4 +686,5 @@
 <script src="../js/js/script.js"></script>
 
 </body>
+
 </html>

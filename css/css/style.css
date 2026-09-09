@@ -841,19 +841,20 @@ img {
     box-shadow: var(--shadow);
 }
 
-.project-image {
-    height: 240px;
+.profile-image {
+    width: 350px;
+    height: 450px;
     overflow: hidden;
-    background: var(--light);
+    border-radius: 12px;
+    flex-shrink: 0;
 }
 
-.project-image img {
+.profile-image img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
-    transition: 0.5s ease;
+    object-position: center;
+    display: block;
 }
 
 .project-card:hover .project-image img {
@@ -1622,4 +1623,914 @@ img {
 .fade-out {
     opacity: 0;
     transition: opacity 0.25s ease;
+}
+
+/* =========================================================
+   PORTFOLIO PROJECT LINK
+========================================================= */
+
+.project-link {
+    display: block;
+    color: inherit;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-link:hover {
+    transform: translateY(-8px);
+}
+
+
+/* =========================================================
+   PROJECT IMAGE
+========================================================= */
+
+.project-link .project-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-link .project-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-link:hover .project-image img {
+    transform: scale(1.07);
+}
+
+
+/* =========================================================
+   PROJECT HOVER
+========================================================= */
+
+.project-hover {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 18px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: linear-gradient(
+        to top,
+        rgba(15, 23, 42, 0.92),
+        rgba(15, 23, 42, 0)
+    );
+
+    color: white;
+
+    opacity: 0;
+
+    transform: translateY(15px);
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease;
+}
+
+.project-link:hover .project-hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-hover span {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.project-hover i {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+
+    transition: transform 0.3s ease;
+}
+
+.project-link:hover .project-hover i {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   PROJECT DETAILS CONTAINER
+========================================================= */
+
+.project-details-container {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   PROJECT DETAILS HERO
+========================================================= */
+
+.project-details-hero {
+    padding: 70px 0 80px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(15, 118, 110, 0.07),
+            rgba(15, 23, 42, 0.02)
+        );
+
+    border-bottom: 1px solid var(--border);
+}
+
+.back-project {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 9px;
+
+    margin-bottom: 35px;
+
+    color: var(--primary);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.back-project:hover {
+    transform: translateX(-5px);
+}
+
+.project-details-heading {
+    max-width: 850px;
+}
+
+.project-details-heading > span {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: var(--primary);
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 1.8px;
+}
+
+.project-details-heading h1 {
+    margin-bottom: 15px;
+
+    color: var(--dark);
+
+    font-size: clamp(36px, 5vw, 58px);
+
+    line-height: 1.1;
+
+    letter-spacing: -2px;
+}
+
+.project-details-heading p {
+    max-width: 750px;
+
+    color: var(--muted);
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   PROJECT MAIN SECTION
+========================================================= */
+
+.project-main-section {
+    padding: 80px 0;
+}
+
+.project-main-image {
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    box-shadow: var(--shadow);
+
+    background: var(--light);
+}
+
+.project-main-image img {
+    width: 100%;
+
+    height: 600px;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   PROJECT INFO GRID
+========================================================= */
+
+.project-info-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-top: 25px;
+}
+
+.project-info-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 22px;
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 5px 25px rgba(15, 23, 42, 0.03);
+}
+
+.project-info-card > i {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 12px;
+
+    background: rgba(20, 184, 166, 0.1);
+
+    color: var(--primary);
+
+    font-size: 18px;
+}
+
+.project-info-card div {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info-card span {
+    color: var(--muted);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+.project-info-card strong {
+    margin-top: 3px;
+
+    color: var(--dark);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   PROJECT CONTENT SECTION
+========================================================= */
+
+.project-content-section {
+    padding: 90px 0;
+}
+
+.project-light-section {
+    background: var(--light);
+}
+
+.project-section-heading {
+    max-width: 720px;
+
+    margin-bottom: 45px;
+}
+
+.project-section-heading > span {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: var(--primary);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.8px;
+}
+
+.project-section-heading h2 {
+    color: var(--dark);
+
+    font-size: clamp(30px, 4vw, 44px);
+
+    line-height: 1.2;
+
+    letter-spacing: -1px;
+}
+
+.project-section-heading p {
+    margin-top: 12px;
+
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   OVERVIEW
+========================================================= */
+
+.project-overview-box {
+    padding: 35px;
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 25px rgba(15, 23, 42, 0.03);
+}
+
+.project-overview-box p {
+    color: var(--text);
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   DESIGN GRID
+========================================================= */
+
+.design-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.design-card {
+    padding: 30px;
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    transition: 0.3s ease;
+}
+
+.design-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: var(--shadow);
+
+    border-color:
+        rgba(15, 118, 110, 0.25);
+}
+
+.design-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 14px;
+
+    background:
+        rgba(20, 184, 166, 0.1);
+
+    color: var(--primary);
+
+    font-size: 22px;
+}
+
+.design-card h3 {
+    margin-bottom: 10px;
+
+    color: var(--dark);
+
+    font-size: 19px;
+}
+
+.design-card p {
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   DRAWING
+========================================================= */
+
+.drawing-container {
+    padding: 20px;
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    box-shadow: var(--shadow);
+}
+
+.drawing-image {
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: #f1f5f9;
+}
+
+.drawing-image img {
+    width: 100%;
+
+    max-height: 750px;
+
+    object-fit: contain;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   3D VISUALIZATION
+========================================================= */
+
+.visualization-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+.visualization-image {
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    box-shadow:
+        0 5px 25px rgba(15, 23, 42, 0.05);
+}
+
+.visualization-image img {
+    width: 100%;
+
+    height: 430px;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.visualization-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================================
+   TECHNICAL TABLE
+========================================================= */
+
+.technical-table {
+    overflow: hidden;
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 25px rgba(15, 23, 42, 0.03);
+}
+
+.technical-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    padding: 20px 25px;
+
+    border-bottom: 1px solid var(--border);
+
+    gap: 20px;
+}
+
+.technical-row:last-child {
+    border-bottom: none;
+}
+
+.technical-row span {
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+.technical-row strong {
+    color: var(--dark);
+
+    font-size: 14px;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   MATERIALS
+========================================================= */
+
+.materials-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.material-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 20px;
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    transition: 0.3s ease;
+}
+
+.material-card:hover {
+    transform: translateY(-4px);
+
+    border-color:
+        rgba(15, 118, 110, 0.25);
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.material-card i {
+    color: var(--primary);
+
+    font-size: 18px;
+}
+
+.material-card span {
+    color: var(--text);
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   BILLING
+========================================================= */
+
+.billing-box {
+    padding: 25px;
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    box-shadow: var(--shadow);
+}
+
+.billing-table {
+    width: 100%;
+}
+
+.billing-row {
+    display: grid;
+
+    grid-template-columns: 1fr 220px;
+
+    gap: 20px;
+
+    padding: 19px 15px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.billing-row span {
+    color: var(--text);
+
+    font-size: 14px;
+}
+
+.billing-row strong {
+    color: var(--dark);
+
+    font-size: 14px;
+
+    text-align: right;
+}
+
+.billing-header {
+    background: var(--dark);
+
+    border-radius: 10px;
+
+    color: white;
+}
+
+.billing-header span {
+    color: white;
+
+    font-weight: 700;
+}
+
+.billing-total {
+    padding-top: 25px;
+
+    border-bottom: none;
+}
+
+.billing-total span,
+.billing-total strong {
+    color: var(--primary);
+
+    font-size: 18px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   PROJECT FEATURES
+========================================================= */
+
+.features-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 16px;
+}
+
+.feature-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 18px 20px;
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+}
+
+.feature-item i {
+    color: var(--primary);
+
+    font-size: 17px;
+}
+
+.feature-item span {
+    color: var(--text);
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   ENGINEER IMAGE FRAME
+========================================================= */
+
+.profile-image {
+    width: 100%;
+
+    height: 500px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    box-shadow: var(--shadow);
+
+    background: #e2e8f0;
+}
+
+.profile-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform 0.5s ease;
+}
+
+.profile-section:hover .profile-image img {
+    transform: scale(1.02);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .project-info-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .design-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .materials-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .project-details-hero {
+        padding: 50px 0 60px;
+    }
+
+    .project-main-section {
+        padding: 55px 0;
+    }
+
+    .project-content-section {
+        padding: 65px 0;
+    }
+
+    .project-main-image img {
+        height: 400px;
+    }
+
+    .project-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .design-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .visualization-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .materials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .technical-row {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .technical-row strong {
+        text-align: left;
+    }
+
+    .billing-row {
+        grid-template-columns: 1fr 130px;
+    }
+
+    .profile-image {
+        height: 420px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .project-details-heading h1 {
+        font-size: 34px;
+    }
+
+    .project-main-image img {
+        height: 300px;
+    }
+
+    .project-overview-box {
+        padding: 25px;
+    }
+
+    .drawing-container {
+        padding: 10px;
+    }
+
+    .billing-box {
+        padding: 12px;
+    }
+
+    .billing-row {
+        padding: 15px 8px;
+
+        grid-template-columns:
+            1fr 110px;
+
+        gap: 10px;
+    }
+
+    .billing-row span,
+    .billing-row strong {
+        font-size: 12px;
+    }
+
+    .billing-total span,
+    .billing-total strong {
+        font-size: 15px;
+    }
+
+    .profile-image {
+        height: 350px;
+    }
+
 }
